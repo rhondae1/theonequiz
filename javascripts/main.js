@@ -25,6 +25,18 @@ function longPlanets (Planets) {
     return longPlanetsArray
 
 
+ function getAnimals () {
+    $.ajax({
+        url: 'data/animals.json'
+    })
+    .done(function (animals) {
+        console.log(animals.animals);
+    })
+}
+
+getAnimals();   
+
+
 
 // > In `main.js` do the following:
 

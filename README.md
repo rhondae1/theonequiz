@@ -80,14 +80,37 @@ console.log(index + 1 + ". " + eachName);
 1. Why did we use Promises when dealing with asynchronous XHR calls?
   **Student answer:**
 
+  Promises, to my knowledge, causes asynchronous functions, calls that aren't synchronous to delay until other tasks are complete. making things run more smoothly.  Some tasks depend on others, some don't. 
+
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**
+
+  for example: 
+
+return function () {
+  var Promise = q.defer()
+
+  $.ajax({
+    url: 'MeFirst.com'
+  })
+  .done(function (data) {
+    Promise.resolve(data)
+  })
+  .fail(function (xhr, status, error) {
+    Promise.reject(error)
+  })
+
+  return Promise.promise
+}
+
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
 **Student answer: **
+
+Probably the number "42"....because "666" is an evil number, and Steve is probably 42 years old.
 
 ```
 var answer = "42";
