@@ -1,0 +1,33 @@
+.first {
+  a null selector
+}
+
+li {
+  display: inline-block;
+}
+
+.odd {
+    border-style: solid;
+    border-color: #ff0000 #0000ff;
+}
+
+.firstAside {
+  color: blue;
+}
+
+.even {
+  background-color: lime;
+
+} 
+
+.goR {
+  float: right;
+}
+
+.goL {
+  float: left;
+}
+
+
+
+}

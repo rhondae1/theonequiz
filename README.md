@@ -28,10 +28,25 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+
+
+**Student answer: **
+It appears to me "hoisting" is a sort of "cover your ass" function of JavaScript.  I takes your *declared variables and pre-loads them before they are actually called, so they are ready and waiting when you do.  It's best practice to put them at the top of the file, but if you don't, JS has your ass covered.
+
+  
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
   **Student answer: **
+
+A call back function is like a function within a function that does not execute until the first one does.  For example, a click function that has an alert on it like a console log.  The function has to be called by some event before the alert, or "callback" can be executed.
+
+For exapmle:
+
+var friends = ["Steve", "Mary", "Tom", "Rick"];
+​
+friends.forEach(function (eachName, index){
+console.log(index + 1 + ". " + eachName);
+});
 
 ## Functions and operators
 
